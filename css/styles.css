@@ -24,7 +24,7 @@ body {
 
 .container {
     min-width: 280px;
-    max-width: 650px;
+    max-width: 600px;
     margin: 1rem;
     border-radius: 0;
     overflow: hidden;
@@ -101,7 +101,7 @@ h2 {
     margin: 1rem 0;
 }
 
-.button-container button{
+.button-container button {
     width: 100%;
     margin-top: 10px;
     padding: 10px;
@@ -115,12 +115,18 @@ h2 {
     transition: .3s;
 }
 
+button:hover {
+    background-color: var(--grey-blue-hover);
+    font-weight: bold;
+}
+
 .password-minlength {
     font-size: 0.75rem;
 }
 
 header {
     padding: 1rem;
+    max-width: 600px;
 }
 
 h1 {
@@ -132,25 +138,22 @@ h1 {
     padding: 2rem;
 }
 
-.logo img {
+.logo-wide {
+    display: none;
+}
+
+.logo-narrow img {
     width: 2rem;
     display: unset;
 }
 
-.logo-text {
+.logo-narrow .logo-text {
     color: var(--white);
     font-weight: bold;
     text-shadow: 1px 1px 1px var(--black);
 }
 
 
-
-/*
-<div class="logo">
-            <img src="./img/logo.svg" alt="logo of mountains">
-            <span class="logo-text">remote.ly</span>
-        </div>
-*/
 
 @media(min-width: 550px){
     .input-box {
@@ -162,9 +165,56 @@ h1 {
     body {
         display: flex;
         justify-content: center;
-        align-items: center;
+
+    }
+
+    .logo-text {
+        color: var(--black);
+        font-weight: bold;
+        text-shadow: none;
+    }
+
+    .hero-image {
+        height: 175vh;
+        background-image: url(../img/work-at-home.webp);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        width: 50%;
+    }
+
+    .text-area {
+        width: 50%;
+        padding: 2rem;
+    }
+
+    .logo-narrow {
+        display: none;
+    }
+
+    .logo-wide {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo-wide img {
+        width: 2rem;
+    }
+    
+    .logo-wide .logo-text {
+        color: var(--black);
+        font-weight: bold;
+        text-shadow: none;
     }
 }
+
+@media(min-width: 1000px){
+    .text-area {
+        padding-right: 10vw;
+    }
+}
+
 
 /* ON YOUR OWN
 

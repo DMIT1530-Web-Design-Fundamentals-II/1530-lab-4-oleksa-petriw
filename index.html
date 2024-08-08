@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,96 +8,100 @@
 
     <!-- Website & Author Information -->
     <meta name="author" content="...">
-    <meta name="description" content="This lab demonstrates a responsive web signup form for a fictitious tech startup.">
+    <meta name="description"
+        content="This lab demonstrates a responsive web signup form for a fictitious tech startup.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="hero-image">
-        <div class="logo">
+        <div class="logo-narrow">
             <img src="./img/logo.svg" alt="logo of mountains">
             <span class="logo-text">remote.ly</span>
         </div>
     </div>
-    <header>
-        <h1>Make every day 'bring your pet to work' day.</h1>
-        <p> Our award-winning platform lets you take your work on the 
-            go, wherever life may lead you. Sign up now to securely 
-            connect to clients, no matter where you are.
-    </header>
-    <div class="container">
-        <div class="try-free">
-            Try it free for 7 days, with plans starting at $25/month.
+    <div class="text-area">
+        <div class="logo-wide">
+            <img src="./img/logo.svg" alt="logo of mountains">
+            <span class="logo-text">remote.ly</span>
         </div>
-        <form action="" method="post">
-            <h2>Your Account</h2>
-            <div class="content">
-                <div class="input-box">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" required>
-                </div>
-                <div class="input-box">
-                    <label for="email">Email Address</label>
-                    <input type="text" name="email" required>
-                </div>
-                <div class="input-box">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" required>
-                    <span class="password-minlength">
-                        <p>
-                            Your password must contain at least one uppercase letter,
-                            one lowercase letter, and one number.
-                        </p>
-                    </span>
-                </div>
-                <div class="input-box">
-                    <label for="confirm-password">Password (Again!)</label>
-                    <input type="password" name="confirmPassword" required>
-                </div>
+        <header>
+            <h1>Make every day 'bring your pet to work' day.</h1>
+            <p> Our award-winning platform lets you take your work on the
+                go, wherever life may lead you. Sign up now to securely
+                connect to clients, no matter where you are.
+        </header>
+        <div class="container">
+            <div class="try-free">
+                Try it free for 7 days, with plans starting at $25/month.
             </div>
-            <h2>All About You</h2>
-            <div class="content">
-                <div class="input-box">
-                    <label for="firstname">First Name</label>
-                    <input type="text" name="firstname" required>
+            <form action="" method="post">
+                <h2>Your Account</h2>
+                <div class="content">
+                    <div class="input-box">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email Address</label>
+                        <input type="text" name="email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" required>
+                        <span class="password-minlength">
+                            <p>
+                                Your password must contain at least one uppercase letter,
+                                one lowercase letter, and one number.
+                            </p>
+                        </span>
+                    </div>
+                    <div class="input-box">
+                        <label for="confirm-password">Password (Again!)</label>
+                        <input type="password" name="confirmPassword" required>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" name="lastname" required>
+                <h2>All About You</h2>
+                <div class="content">
+                    <div class="input-box">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="birthdate">Date of Birth</label>
+                        <input type="date" name="birthdate" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="business">Business Type</label>
+                        <select id="business" name="business">
+                            <option value="sole">Sole Proprietorship</option>
+                            <option value="partner">Partnership</option>
+                            <option value="llc">Limited Liability Company</option>
+                            <option value="corp">Corporation</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <label for="birthdate">Date of Birth</label>
-                    <input type="date" name="birthdate" required>
+                <div class="button-container">
+                    <button type="submit">Claim Your Free Trial ></button>
                 </div>
-                <div class="input-box">
-                    <label for="business">Business Type</label>
-                    <select id="business" name="business">
-                        <option value="sole">Sole Proprietorship</option>
-                        <option value="partner">Partnership</option>
-                        <option value="llc">Limited Liability Company</option>
-                        <option value="corp">Corporation</option>
-                    </select>
+                <div class="alert">
+                    <p>By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy
+                            Policy</a>.</p>
                 </div>
-            </div>
-            <div class="button-container">
-                <button type="submit">Claim Your Free Trial ></button>
-            </div>
-            <div class="alert">
-                <p>By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </body>
-</html>
 
-<!-- 
-remote.ly
-Make every day ‘bring your pet to work’ day.
-Our award-winning platform lets you take your work on the go, wherever life may lead you. Sign up now to securely connect to clients, no matter where you are.
--->
+</html>
