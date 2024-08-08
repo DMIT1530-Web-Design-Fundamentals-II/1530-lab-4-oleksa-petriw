@@ -12,9 +12,112 @@ body {
     background-color: var(--white);
     color: var(--black);
     font-family: 'Work Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.container {
+    max-width: 650px;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--mid-grey)
+}
 
+h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    align-items: flex-start;
+}
+
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.input-box input,
+.input-box select {
+    height: 2rem;
+    width: 95%;
+    border-radius: 0.25rem;
+    border: 1px solid var(--dark-grey);
+}
+
+.input-box label {
+    height: 2rem;
+}
+
+.alert p {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--black);
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.alert a {
+    text-decoration: underline;
+    color: var(--black)
+}
+
+.alert a:hover {
+    font-weight: bold;
+}
+
+.button-container {
+    margin: 1rem 0;
+}
+
+.button-container button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 1rem;
+    color: var(--white);
+    border: none;
+    border-radius: 0.25rem;
+    background-color: var(--grey-blue);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.password-minlength {
+    font-size: 0.75rem;
+}
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+    .input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+}
 
 /* ON YOUR OWN
 
@@ -24,4 +127,8 @@ body {
     2. have white text
     3. have a drop-shadow on the text
 
+*/
+
+/*
+media queries: 600px, 820px, 1000px
 */

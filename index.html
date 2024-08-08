@@ -18,6 +18,70 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
+    <div class="container">
+        <form action="" method="post">
+            <h2>Your Account</h2>
+            <div class="content">
+                <div class="input-box">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" required>
+                    <span class="password-minlength">
+                        <p>
+                            Your password must contain at least one uppercase letter,
+                            one lowercase letter, and one number.
+                        </p>
+                    </span>
+                </div>
+                <div class="input-box">
+                    <label for="confirm-password">Password (Again!)</label>
+                    <input type="password" name="confirmPassword" required>
+                </div>
+            </div>
+            <h2>All About You</h2>
+            <div class="content">
+                <div class="input-box">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" required>
+                </div>
+                <div class="input-box">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" required>
+                </div>
+                <div class="input-box">
+                    <label for="birthdate">Date of Birth</label>
+                    <input type="date" name="birthdate" required>
+                </div>
+                <div class="input-box">
+                    <label for="business">Business Type</label>
+                    <select id="business" name="business">
+                        <option value="sole">Sole Proprietorship</option>
+                        <option value="partner">Partnership</option>
+                        <option value="llc">Limited Liability Company</option>
+                        <option value="corp">Corporation</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit">Claim Your Free Trial ></button>
+            </div>
+            <div class="alert">
+                <p>By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
+
+<!-- 
+remote.ly
+Make every day ‘bring your pet to work’ day.
+Our award-winning platform lets you take your work on the go, wherever life may lead you. Sign up now to securely connect to clients, no matter where you are.
+-->
